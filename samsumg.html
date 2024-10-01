@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+        .header {
+            background-color:black;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 220px;
+            margin: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product-info p {
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .product-info .price {
+            font-size: 20px;
+            color: #4CAF50;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+       footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  .img1{
+  border-radius: 20%;
+            width: 8%;
+            position:absolute;
+    left:0;
+   top: 10px; 
+  }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+    <img class="img1" src="C:\web site\csc\samsumg logo.png">
+        <h1>Samsumg</h1>
+    </div>
+    <div class="products">
+        <div class="product">
+            <a href="Samsumg.html">
+                <img src="C:\web site\csc\samsumg galaxie s10.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.samsung.com/africa_fr/smartphones/galaxy-s10/specs/" target="bank">Samsumg galaxy-S10</a></h3>
+                    <p class="price">490 €</p>
+                      <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+         <div class="product">
+            <a href="Samsumg.html">
+                <img src="C:\web site\csc\samsumg galaxie a12.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/samsung_galaxy_a12-10604.php" target="bank">Samsumg galaxie A12</a></h3>
+                    <p class="price">410 €</p>
+                     <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+         <div class="product">
+            <a href="Samsumg.html">
+                <img src="C:\web site\csc\samsumg galaxie a32.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/samsung_galaxy_a32-10753.php" target="bank">Samsung galaxy A32</a></h3>
+                    <p class="price">500 €</p>
+                     <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="Samsumg.html">
+                <img src="C:\web site\csc\samsumg galaxie s23 ulta.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/samsung_galaxy_s23_ultra-12024.php" target="bank">Samsumg galaxie S23 ultra</a></h3>
+                    <p class="price">1300 €</p>
+                     <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+		<div class="product">
+            <a href="Samsumg.html">
+                <img src="C:\web site\csc\samsumg galaxie s24 ultra.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/samsung_galaxy_s24_ultra-12771.php" target="bank">Samsumg galaxie S24 ultra</a></h3>
+                    <p class="price">1500 €</p>
+                     <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+		<div class="product">
+            <a href="Samsumg.html">
+                <img src="C:\web site\csc\samsumg galaxie s21.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/samsung_galaxy_s21_5g-10626.php" target="bank">Samsumg galaxie S21</a></h3>
+                    <p class="price">1000 €</p>
+                     <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+		<div class="product">
+            <a href="Samsumg.html">
+                <img src="C:\web site\csc\samsumg galaxie s21 ultra.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/samsung_galaxy_s21_ultra_5g-10596.php" target="bank">Samsumg galaxie S21 ultra</a></h3>
+                    <p class="price">1100 €</p>
+                       <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+		<div class="product">
+            <a href="Samsumg.html">
+                <img src="C:\web site\csc\samsumg galaxie a52.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/samsung_galaxy_a54-12070.php" target="bank">Samsumg galaxie A54</a></h3>
+                    <p class="price">650 €</p>
+                     <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+		<div class="product">
+            <a href="Samsumg.html">
+                <img src="C:\web site\csc\samsumg galaxie a53.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/samsung_galaxy_a53_5g-11268.php" target="bank">Samsumg galaxie A53</a></h3>
+                    <p class="price">600 €</p>
+                     <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+		<div class="product">
+            <a href="Samsumg.html">
+                <img src="C:\web site\csc\samsumg galaxie s22 ulta.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/samsung_galaxy_s22_ultra_5g-11251.php" target="bank">Samsumg galaxie S22 ultra</a></h3>
+                    <p class="price">1400 €</p>
+                      <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+		<div class="product">
+            <a href="Samsumg.html">
+                <img src="C:\web site\csc\samsumg galaxie s20 ulta.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/samsung_galaxy_s20_ultra_5g-10040.php" target="bank">Samsumg galaxie S20 ultra</a></h3>
+                    <p class="price">950 €</p>
+                    <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+		<div class="product">
+            <a href="Samsumg.html">
+                <img src="C:\web site\csc\samsumg galaxie s22.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/samsung_galaxy_s22_5g-11253.php" target="bank">Samsumg galaxie S22</a></h3>
+                    <p class="price">299 €</p>
+                     <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+		<div class="product">
+            <a href="Samsumg.html">
+                <img src="C:\web site\csc\samsumg galaxie a15.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/samsung_galaxy_a15-12637.php" target="bank">Samsumg galaxie A15</a></h3>
+                    <p class="price">678 €</p>
+                   <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+		<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Buy</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Buy</label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+              <button type="submit" class="btn btn-block">Pay 
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Need <a href="#">help?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ </div>
+ <diV>
+ <h3 class="text-center">For more information</h3>  
+
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p> <a href="https://www.samsung.com/us/" data-toggle="tooltip" title="Visit Samsumg">www.samsumg.com</a></p> 
+</footer>
+<
+</body>
+</html>

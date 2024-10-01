@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+        body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+
+        .header {
+            background-color: Black;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 220px;
+            margin: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product-info p {
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .product-info .price {
+            font-size: 20px;
+            color: #4CAF50;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+		footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  .img1{
+  border-radius: 20%;
+            width: 8%;
+            position:absolute;
+    left:0;
+   top: 10px; 
+  }
+    </style>
+</head>
+<body>
+    <div class="header">
+	<img class="img1" src="C:\web site\csc\logo de iphone.jpeg">
+        <h1>iphone</h1>
+    </div>
+    <div class="products">
+        <div class="product">
+            <a href="Iphone.html">
+                <img src="C:\web site\csc\iphone 15 pro max.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/apple_iphone_15_pro_max-12548.php" target="bank">iphone 15pro max</a></h3>
+                    <p class="price">1400 €</p>
+                    <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+             <div class="product">
+            <a href="Iphone.html">
+                <img src="C:\web site\csc\iphone 14pro max.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/apple_iphone_14_pro_max-11773.php" target="bank">iphone 14pro max</a></h3>
+                    <p class="price">1300 €</p>
+                    <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+		 <div class="product">
+            <a href="Iphone.html">
+                <img src="C:\web site\csc\iphone xs max.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/apple_iphone_xs_max-9319.php" target="bank">iphone xs max</a></h3>
+                    <p class="price">300 €</p>
+                     <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+		 <div class="product">
+            <a href="Iphone.html">
+                <img src="C:\web site\csc\iphone xr .jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/apple_iphone_xr-9320.php" target="bank">iphone xr</a></h3>
+                    <p class="price">300 €</p>
+                    <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+		 <div class="product">
+            <a href="Iphone.html">
+                <img src="C:\web site\csc\iphone 11 .jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/apple_iphone_11-9848.php" target="bank">iphone 11</a></h3>
+                    <p class="price">689 €</p>
+                     <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+		 <div class="product">
+            <a href="Iphone.html">
+                <img src="C:\web site\csc\iphone 15.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/apple_iphone_15-12559.php" target="bank">iphone 15</a></h3>
+                    <p class="price">1058 €</p>
+                    <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+		 <div class="product">
+            <a href="Iphone.html">
+                <img src="C:\web site\csc\iphone 14 .jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/apple_iphone_14-11861.php" target="bank">iphone 14</a></h3>
+                    <p class="price">950 €</p>
+                   <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+		 <div class="product">
+            <a href="Iphone.html">
+                <img src="C:\web site\csc\iphone 8 .jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/apple_iphone_8-8573.php" target="bank">iphone 8</a></h3>
+                    <p class="price">200 €</p>
+                     <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+		 <div class="product">
+            <a href="Iphone.html">
+                <img src="C:\web site\csc\iphone x .jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/apple_iphone_x-8858.php" target="bank">iphone x</a></h3>
+                    <p class="price">250 €</p>
+                    <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+           <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Buy</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Buy</label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+              <button type="submit" class="btn btn-block">Pay 
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Need <a href="#">help?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ </div>
+ <h3 class="text-center">For more infomation</h3>  
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p><a href="https://www.apple.com/iphone/" data-toggle="tooltip" title="Visit iphone">www.iphone-com.com</a></p> 
+</footer>
+
+</body>
+</html>

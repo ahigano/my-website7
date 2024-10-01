@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+        }
+
+        .header {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 220px;
+            margin: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product-info p {
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .product-info .price {
+            font-size: 20px;
+            color: #4CAF50;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  .img1{
+  border-radius: 30%;
+            width: 20%;
+            position:absolute;
+    left:0;
+   top: 10px;  
+   background-color:white;
+  }
+    </style>
+</head>
+<body>
+    <div class="header">
+     <img class="img1" src="C:\web site\csc\logo de tecno.png">
+        <h1>Tecno</h1>
+    </div>
+    <div class="products">
+        <div class="product">
+            <a href="Tecno.html">
+                <img src="C:\web site\csc\proxy-image (2).jpeg" alt="Tecno Spark 10">
+                <div class="product-info">
+                    <h3><a href="https://www.tecno-mobile.com/phones/product-detail/product/spark-20/" target="bank">Tecno Spark 20</a></h3>
+                    <p class="price">299 €</p>
+                   <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="Tecno.html">
+                <img src="C:\web site\csc\tecno 7 pro.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.tecno-mobile.com/ma/telephones/tech-specs/tecspecs/spark-7-pro-9/" target="bank">Tecno 7pro</a></h3>
+                    <p class="price">150 €</p>
+                     <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="Tecno.html">
+                <img src="C:\web site\csc\proxy-image (4).jpeg" alt="iPhone 13">
+                <div class="product-info">
+                    <h3><a href="https://www.tecno-mobile.com/tg/telephones/product-detail/product/spark-9-12/" target="bank">Tecno Spark 9</a></h3>
+                    <p class="price">199 €</p>
+                    <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="Tecno.html">
+                <img src="C:\web site\csc\tecno pova 4.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.tecno-mobile.com/ph/phones/tech-specs/tecspecs/pova-4-13/" target="bank">Tecno pova 4</h3>
+                    <p class="price">499 €</p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+      <div class="product">
+            <a href="Tecno.html">
+                <img src="C:\web site\csc\tecno spark 17.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.tecno-mobile.com/phones/tech-specs/tecspecs/camon-17-6/" target="bank">Tecno camon 17</a></h3>
+                    <p class="price">129 €</p>
+                     <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+      <div class="product">
+            <a href="Tecno.html">
+                <img src="C:\web site\csc\proxy-image (7).jpeg" alt="Huawei P30">
+                <div class="product-info">
+          <h3><a href="https://www.tecno-mobile.com/phones/product-detail/product/spark-20/Tecno Spark 10" target="bank">Tecno spark 10</a></h3>
+                    <p class="price">148 €</p>
+                    <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+          <div class="product">
+            <a href="Tecno.html">
+                <img src="C:\web site\csc\tecno-spark-20-pro-plus-1.jpg">
+                <div class="product-info">
+                    <h3><a href="https://www.tecno-mobile.com/phones/product-detail/product/spark-20-pro-+/" target="bank">Tecno spark 20 pro+</a></h3>
+                    <p class="price">239 €</p>
+                     <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+         <div class="product">
+            <a href="Tecno.html">
+                <img src="C:\web site\csc\tecno camon 30.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.tecno-mobile.com/bf/telephones/tech-specs/tecspecs/camon-30-premier-5g/" target="bank">Tecno Camon 30</a></h3>
+                    <p class="price">309 €</p>
+                     <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+           <div class="product">
+            <a href="Tecno.html">
+                <img src="C:\web site\code java scrip\tecno camon 20.webp">
+                <div class="product-info">
+                    <h3><a href="https://www.tecno-mobile.com/cm/telephones/tech-specs/tecspecs/camon-20-10/" target="bank">Tecno Camon 20</a></h3>
+                    <p class="price">197€</p>
+                     <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="Tecno.html">
+                <img src="C:\web site\csc\tecno spark 4.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/tecno_spark_4-10695.php" target="bank">Tecno Spark 4</a></h3>
+                    <p class="price">209 €</p>
+                     <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+           <div class="product">
+            <a href="Tecno.html">
+                <img src="C:\web site\csc\tecno spark3.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/tecno_spark_3_pro-9870.php" target="bank">Tecno Spark 3pro</a></h3>
+                    <p class="price">95 €</p>
+                      <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+         <div class="product">
+            <a href="Tecno.html">
+                <img src="C:\web site\csc\tecno spark 5 pro.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/tecno_spark_5_pro-10324.php" target="bank">Tecno spark 5pro</a></h3>
+                    <p class="price">108 €</p>
+                     <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+             <div class="product">
+            <a href="Tecno.html">
+                <img src="C:\web site\csc\tecno 6 pro.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.gsmarena.com/tecno_spark_6-10471.php" target="bank">Tecno 6pro</a></h3>
+                    <p class="price">100 €</p>
+                    <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+         <div class="product">
+            <a href="Tecno.html">
+                <img src="C:\web site\csc\tecno spark8.jpeg">
+                <div class="product-info">
+                    <h3><a href="https://www.tecno-mobile.com/rw/phones/tech-specs/tecspecs/spark-8-pro-5/" target="bank">Tecno Spark 8pro</a></h3>
+                    <p class="price">105 €</p>
+                  <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+                </div>
+            </a>
+        </div>
+        <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Buy</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Buy</label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+              <button type="submit" class="btn btn-block">Pay 
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Need <a href="#">help?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<h3 class="text-center">For more information</h3>  
+
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p> <a href="https://www.tecno-mobile.com/ph/" data-toggle="tooltip" title="Visit w3schools">www.Tecno-mobile.com</a></p>  
+</footer>
+</body>
+</html>

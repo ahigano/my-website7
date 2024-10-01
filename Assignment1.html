@@ -1,0 +1,586 @@
+ <!DOCTYPE html>
+ 
+<html>
+	<head>
+		<link rel="icon" href="Image\assignment.jpg">
+		<meta charset="utf.8">
+		<meta name="viewport"; content="width=device-width, initial-scale=1.0">
+		<title> Assignment N°1</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome -->
+		<style>
+        body {
+            font-size: 20px; /* Agrandit l'écriture de tout le corps de la page */
+        }
+        h4 {
+            font-size: 24px; /* Agrandit l'écriture des titres h4 */
+        }footer{
+    width: 100%;
+    background-color: #f18930;
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+}
+footer p{
+    color: #fff;
+	width: 100%;
+}
+footer p span{
+    color: #29d9d5;
+}
+.container{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    width: 33.3%;
+}
+h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-content p{
+    width:190px;
+    margin: auto;
+    padding: 7px;
+
+}
+.footer-content ul{
+    text-align: center;
+}
+.list{
+    padding: 0;
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type:none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social-icons i{
+    color: white;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #f18930;
+}
+.social-icons i:hover{
+    color: #f18930;
+}
+.bottom-bar{
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+    </style>
+		
+	</head>
+	<body  style="background-color:lightgray">
+		<h1 style="color:text-align:center">Answers to questions</h1>
+		
+<h4> 1) What is HTML and what does it stand for?</h4>
+		<p> is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. </p><br><br>
+		
+<h4> 2) What is the difference between HTML and XHTML?</h4>
+		<ul>
+		    <li> HTML (HyperText Markup Language): is a standard for creating and structuring web pages. It is more forgiving of errors and allows for a more lenient syntax.</ul>
+			<li> XHTML (eXtensible HyperText Markup Language): is a stricter and cleaner version of HTML that adheres to XML rules. It requires well-formed syntax and proper nesting of elements, making it more rigorous but also more predictable.</li><br><br>
+        </ul>
+		
+<h4>3) What are the basic building blocks of an HTML document</h4>
+		<ul>
+			<li><code style="color:blue">&lt;!DOCTYPE html&gt;</code>:  Declaration defining the document type and HTML version.</li>
+			<li><code style="color:blue">&lt;html&gt;</code>:  Root element containing the entire document.</li>
+			<li><code style="color:blue">&lt;head&gt;</code>:  Contains metadata, such as title, links to stylesheets, and scripts.</li>
+			<li><code style="color:blue">&lt;title&gt;</code>:  Defines the title of the document, shown in the browser’s title bar or tab.</li>
+			<li><code style="color:blue">&lt;body&gt;</code>:  Contains the content of the web page, including text, images, links, etc.</li>
+		</ul>	
+<h4> 4) How do you create a hyperlink in HTML?</h4>
+			<p> To create a hyperlink, use the <code style="color:blue">&lt;a&gt;</code> (anchor) tag. The href attribute specifies the URL of the page the link goes to.<br>
+			Example <code style="color:blue">&lt;a href="https://www.example.com"&gt;</code></p><br>
+		
+		<h4> 5) What is the purpose of the "alt" attribute in the HTML "img" tag?</h4>
+		<p> The alt (alternative text) attribute provides a text description of an image. It is used for accessibility (e.g., screen readers for visually impaired users) and is displayed if the image fails to load.</p><br><br>
+		
+<h4> 6) How can you create a table in HTML?</h4>
+		<p> 
+			  To create a table, use the <code style="color:blue">&lt;table&gt;</code>tag along with <code style="color:blue">&lt;tr&gt;</code> for rows, <code style="color:blue">&lt;th&gt;</code> for table headers, and <code style="color:blue">&lt;td&gt;</code> for table data cells.<br>
+			  Example:<br> 
+						<img src="Image/OIP.jpeg" 	alt="ma photo" width="550px" height="250px">
+		</p><br> 
+						
+ 
+<h4> 7) What is the purpose of the "doctype" declaration in HTML?</h4>
+		<p>
+		The <code style="color:blue">&lt;!DOCTYPE&gt;</code> declaration is used to specify the HTML version and type of document being used. It helps browsers render the page correctly by informing them about the HTML standard the document adheres to. For example, <code style="color:blue">&lt;!DOCTYPE html&gt;</code> indicates that the document is using HTML5. This declaration is not an HTML tag but a way to ensure consistent rendering across different browsers.
+		</p><br>
+		
+<h4> 8) What is the difference between HTML elements and HTML tags?</h4>
+		<p>
+		HTML Tags: Tags are the basic building blocks of HTML and are used to create elements. They are enclosed in angle brackets, like <code style="color:blue">&lt;tag&gt;</code>. There are opening tags, such as <code style="color:blue">&lt;p&gt;</code>, and closing tags, such as <code style="color:blue">&lt;/p&gt;</code>.<br>
+		HTML Elements: Elements are the complete building blocks of HTML content and include both the opening tag and the closing tag, as well as any content in between. For example, <code style="color:blue">&lt;p&gt;</code>This is a paragraph.<code style="color:blue">&lt;/p&gt;</code> is a complete HTML element, with <code style="color:blue">&lt;p&gt;</code> as the opening tag, <code style="color:blue">&lt;/p&gt;</code> as the closing tag, and "This is a paragraph." as the content.
+		</p><br>
+		
+<h4> 9) How do you add comments in HTML?</h4>
+		<p>
+		Comments in HTML are added using the following syntax: <code style="color:blue">&lt;!-- comment --&gt;</code>.
+		</p><br>
+		
+<h4> 10) What is the significance of the "head" section in an HTML document?</h4>
+		<p>
+		The <code style="color:blue">&lt;head&gt;</code> section of an HTML document contains meta-information about the document that is not directly visible on the page. This includes elements like:
+		<ul>
+			<li><code style="color:blue">&lt;title&gt;</code>:  Sets the title of the page, which appears in the browser tab.</li>
+			<li><code style="color:blue">&lt;meta&gt;</code>:Provides metadata such as character set, viewport settings, and page description.</li>
+			<li><code style="color:blue">&lt;link&gt;</code>:  Links to external resources like stylesheets.</li>
+		</ul>
+		</p><br>
+		
+<h4> 11) How do you define headings in HTML?</h4>
+		<p>
+		Headings in HTML are defined using the <code style="color:blue">&lt;h1&gt;</code> to <code style="color:blue">&lt;h6&gt;</code> tags. <code style="color:blue">&lt;h1&gt;</code> represents the highest (or most important) level of heading, and <code style="color:blue">&lt;h6&gt;</code> represents the lowest (or least important) level
+		</p><br><br>
+		
+<h4> 12) What is the role of the "title" element in HTML?</h4>
+			<p>
+			The <code style="color:blue">&lt;title&gt;</code> element is used to define the title of the HTML document. This title appears in the browser's title bar or tab and is important for SEO and accessibility. It is placed within the <code style="color:blue">&lt;head&gt;</code> section of the document:
+			</p><br>
+		
+<h4> 13) How do you create an ordered list in HTML?</h4>
+			<p>
+			An ordered list is created using the <code style="color:blue">&lt;ol&gt;</code> tag, and each list item within it is marked up with the <code style="color:blue">&lt;li&gt;</code> tag. The list is automatically numbered:<br>
+			Example: <br>
+			<img src="Image/14.jpeg" 	alt="ma photo" width="550px" height="250px">
+			</p><br>
+		
+<h4> 14) What are the different types of form elements in HTML?</h4>
+		<p>
+			HTML forms can include various types of elements to capture user input. Common form elements include:<br>
+			<ul>
+				<li><code style="color:blue">&lt;input&gt;</code>:  Sets the title of the page, which appears in the browser tab.</li>
+				<li><code style="color:blue">&lt;textarea&gt;</code>:Provides metadata such as character set, viewport settings, and page description.</li>
+				<li><code style="color:blue">&lt;select&gt;</code>:  Links to external resources like stylesheets.</li>
+				<li><code style="color:blue">&lt;button&gt;</code>:  Links to external resources like stylesheets.</li>
+				<li><code style="color:blue">&lt;label&gt;</code>:  Links to external resources like stylesheets.</li>
+				<li><code style="color:blue">&lt;fielset&gt&gt;</code>:  Links to external resources like stylesheets.</li>
+				<li><code style="color:blue">&lt;legend&gt;</code>:  Links to external resources like stylesheets.</li>
+				<li><code style="color:blue">&lt;input type="radio"&gt;</code>:  Links to external resources like stylesheets.</li>
+				<li><code style="color:blue">&lt;input type="checkbox"&gt;</code>:  Links to external resources like stylesheets.</li>
+			</ul>
+		</p><br>
+		
+<h4> 15) How do you embed an image in an HTML document?</h4>
+		<p>
+			To embed an image, use the <img> tag with the src attribute pointing to the image file and the alt attribute providing alternative text.<br>
+			<code style="color:blue">&lt;img src="Image\14.jpeg"&gt;</code>:
+		</p><br>
+		
+<h4> 16) What is the purpose of the "href" attribute in an anchor tag?</h4>
+		<p>
+			The href (hypertext reference) attribute specifies the URL of the page the link goes to. It is used within the <a> (anchor) tag to create hyperlinks.
+		</p><br>
+		
+<h4> 17) How do you create a line break in HTML?</h4>
+		<p>
+			To create a line break, you use the <code style="color:blue">&lt;br&gt;</code> tag. This tag is an empty element (i.e., it doesn't have a closing tag).
+		</p><br>
+		
+<h4> 18) What is the purpose of the "target" attribute in an anchor tag?</h4>
+		<p>
+			<ul>
+				<li> The target attribute specifies where to open the linked document. Common values include:</li>
+				<li> Self (default): Opens the link in the same frame as it was clicked</li>
+				<li> Blank: Opens the link in a new window or tab</li>
+				<li> Parent: Opens the link in the parent frame.</li>
+				<li> Top: Opens the link in the full window.</li>
+			</ul>
+		</p><br>
+		
+<h4> 19) What is the difference between block-level and inline elements in HTML?</h4>
+		<p>
+			Block-level elements:<br>
+				These elements take up the full width available and start on a new line. They create a "block" of content. Examples include <code style="color:blue">&lt;div&gt;</code>, <code style="color:blue">&lt;p&gt;</code>, and <code style="color:blue">&lt;h1&gt;</code>.<br>
+			Inline elements:<br>
+				These elements take up only as much width as necessary and do not start on a new line. They flow within the content. Examples include <code style="color:blue">&lt;span&gt;</code>, <code style="color:blue">&lt;a&gt;</code>, and <code style="color:blue">&lt;strong&gt;</code>.
+		</p><br>
+		
+<h4> 20) How do you create a horizontal rule in HTML?</h4>
+		<p>
+			We use the <code style="color:blue">&lt;hr&gt;</code> tag to create a horizontal line (rule). This tag is also an empty element and does not have a closing tag.
+		</p><br>
+		
+<h4> 21) What is the role of the "span" element in HTML?</h4>
+		<p>
+			The <code style="color:blue">&lt;span&gt;</code> element is used to group inline elements or text within a document. It doesn’t have any inherent styling or semantic meaning but is commonly used with CSS or JavaScript to apply specific styles or manipulate a section of text. For example, you might use <code style="color:blue">&lt;span&gt;</code> to change the color of part of a sentence or to apply a class for JavaScript functionality.
+		</p><br>
+		
+<h4> 22) How do you create a checkbox in HTML?</h4>
+		<p>
+			To create a checkbox in HTML, use the <code style="color:blue">&lt;input&gt;</code> element with the type attribute set to "checkbox". You can also include a label to make it more user-friendly.
+		</p><br>
+		
+<h4> 23) What is the purpose of the "src" attribute in the "script" tag?</h4>
+		<p>
+			The src attribute in the <code style="color:blue">&lt;script&gt;</code> tag specifies the URL of an external JavaScript file that should be loaded and executed. This allows you to keep JavaScript code separate from HTML content, promoting better organization and maintainability
+		</p><br>
+		
+<h4> 24) How do you create a dropdown menu in HTML?</h4>
+		<p>
+			A dropdown menu is created using the <code style="color:blue">&lt;select&gt;</code> element in combination with <code style="color:blue">&lt;option&gt;</code> elements to define the options within the dropdown.
+		</p><br>
+		
+<h4> 25) What is the purpose of the "colspan" attribute in an HTML table?</h4>
+		<p>
+			The colspan attribute is used in the <code style="color:blue">&lt;td&gt;</code> or <code style="color:blue">&lt;th&gt;</code> elements of an HTML table to specify the number of columns a cell should span. This allows you to merge cells across multiple columns.
+		</p><br>
+		
+<h4> 26) How do you add a background image to an HTML element?</h4>
+		<p>
+			To add a background image to an HTML element, you use CSS. You can do this by adding a background-image property to the CSS rule for that element.<br>
+			<img src="Image/26.jpeg" 	alt="ma photo" width="550px" height="250px">
+		</p><br>
+		
+<h4> 27) What is the purpose of the "action" attribute in an HTML form?</h4>
+		<p>
+			The action attribute in an HTML <code style="color:blue">&lt;form&gt;</code> element specifies the URL where the form data will be sent when the form is submitted. It tells the browser where to send the data for processing. If the action attribute is not specified, the form will be submitted to the same URL as the page where the form is located.<br>
+			<img src="Image/27.jpeg" 	alt="ma photo" width="350px" height="150px">
+		</p><br>
+		
+<h4> 28) How do you add a video to an HTML document?</h4>
+		<p>
+			To add a video to an HTML document, use the <code style="color:blue">&lt;video&gt;</code> element. You can also include the controls attribute to provide playback controls (like play, pause, and volume).<p>
+			<img src="Image/28.jpeg" 	alt="ma photo" width="550px" height="350px">
+		</p><br>
+		
+<h4> 29) What is the purpose of the "disabled" attribute in an input field?</h4>
+		<p>
+			 The disabled attribute in an input field makes the field unmodifiable and unselectable. Users cannot interact with it or submit its value. The field is visually grayed out and is not included in form submissions.
+		</p><br>
+		
+<h4> 30) How do you create a form in HTML?</h4>
+		<p>
+			A form in HTML is created using the <code style="color:blue">&lt;forme&gt;</code> tag. Inside the form, you place various input elements like text fields, buttons, and labels. The action attribute specifies where to send the form data, and the method attribute defines the HTTP method (GET or POST) used to send the data.<br>
+			<img src="Image/30.jpeg" 	alt="ma photo" width="550px" height="250px">
+		</p><br>
+		
+<h4> 31) What is the purpose of the "placeholder" attribute in an input field?</h4>
+	<p>
+		The placeholder attribute provides a hint or example of what should be entered in an input field. It is displayed inside the input box as a light-colored text and disappears when the user starts typing.<br>
+	</p><br>
+
+<h4> 32) How do you create a hyperlink with an image in HTML?</h4>
+	<p>
+	To create a hyperlink with an image, use the <code style="color:blue">&lt;a&gt;</code> tag to wrap around an <code style="color:blue">&lt;img&gt;</code> tag. The href attribute of the <code style="color:blue">&lt;a&gt;</code> tag specifies the URL of the page the link goes to.<br>
+		<img src="Image/32.jpeg" 	alt="ma photo" width="350px" height="150px">
+	</p><br>
+
+<h4> 33) What is the purpose of the "required" attribute in an input field?</h4>
+	<p>
+		The required attribute ensures that the input field must be filled out before the form can be submitted. It prevents form submission if the field is empty.
+	</p><br>
+<h4> 34) How do you create a responsive layout in HTML?</h4>
+	<p>
+		Responsive layouts adjust to different screen sizes. This is typically achieved using CSS media queries. For example, you can use the <code style="color:blue">&lt;meta&gt;</code> tag to set the viewport, and CSS to apply styles based on the screen width.<br>
+		<img src="Image/34.jpeg" 	alt="ma photo" width="550px" height="250px">
+	</p><br>
+
+<h4> 35) What is the purpose of the "charset" attribute in the "meta" tag?</h4>
+	<p>
+		The charset attribute specifies the character encoding for the HTML document. This ensures that characters are displayed correctly across different browsers and platforms.
+	</p><br>
+
+<h4> 36) What is the purpose of the "autocomplete" attribute in an input field?</h4>
+	<p>
+		The autocomplete attribute specifies whether the browser should automatically complete the field based on past entries. It can be set to on or off.
+	</p><br>
+
+<h4> 37) How do you create a button in HTML?</h4>
+	<p>
+		A button is created using the <code style="color:blue">&lt;button&gt;</code>tag or the <code style="color:blue">&lt;input&gt;</code> tag with type "button." The <code style="color:blue">&lt;button&gt;</code> tag is more versatile as it can contain HTML content.<br>
+		<img src="Image/37.jpeg" 	alt="ma photo" width="250px" height="50px">
+	</p><br>
+
+<h4> 38) What is the purpose of the "nowrap" attribute in an HTML table?</h4>
+	<p>
+		The nowrap attribute was used to prevent text from wrapping to the next line within a table cell. However, it is obsolete and should be replaced with CSS white-space: nowrap;.
+	</p><br>
+
+<h4> 39) How do you create a responsive image in HTML?</h4>
+	<p>
+		To make an image responsive, use CSS to ensure the image scales with the container. The max-width: 100%; rule ensures the image scales down but never scales up beyond its original size.<br>
+		<img src="Image/39.jpeg" 	alt="ma photo" width="450px" height="50px">
+	</p><br>
+
+<h4> 40) What is the purpose of the "target" attribute in an anchor tag?</h4>
+	<p>
+		The target attribute specifies where to open the linked document. Common values include _blank (opens in a new window or tab), _self (default, opens in the same frame), _parent, and _top.
+	</p><br>
+
+<h4> 41) How do you create a button in HTML?</h4>
+	<p>
+		To create a button in HTML, you can use the <code style="color:blue">&lt;button&gt;</code> element. Here’s a basic example<br>
+		<img src="Image/41-1.jpeg" 	alt="ma photo" width="350px" height="50px"><br>
+		You can also use the <code style="color:blue">&lt;input&gt;</code> element with type="button" if you prefer:<br>
+		<img src="Image/41-2.jpeg" 	alt="ma photo" width="350px" height="50px">
+	</p><br>
+
+<h4> 42) What is the purpose of the "target" attribute in an anchor tag?</h4>
+	<p>
+		The target attribute specifies where to open the linked document when an anchor (<code style="color:blue">&lt;a&gt;</code>) tag is clicked. Common values include:
+		<ul>
+				<li> Self (default): Opens the link in the same frame or window.</li>
+				<li> Blank: Opens the link in a new window or tab.</li>
+				<li> Parent: Opens the link in the parent frame.</li>
+				<li> _top: Opens the link in the full window (removes frames).</li>
+		<ul>
+	</p><br>
+
+<h4> 43) What is the purpose of the "placeholder" attribute in a textarea?</h4>
+	<p>
+		The placeholder attribute provides a hint or example text within a You can use the <audio> element to embed audio. Here’s a basic example: element (or an <code style="color:blue">&lt;input&gt;</code> element) that disappears when the user starts typing. It helps users understand what kind of input is expected.
+	</p><br>
+
+<h4> 44) What is the purpose of the "readonly" attribute in an input field?</h4>
+	<p>
+		The readonly attribute makes an input field non-editable but still allows users to select and copy its contents. It is useful for displaying data that the user shouldn’t change.
+	</p><br>
+
+<h4> 45) How do you create a responsive video in HTML?</h4>
+	<p>
+		To create a responsive video, you can use CSS to ensure that the video scales properly on different screen sizes. Here’s an example using a combination of HTML and CSS:<br>
+
+		HTML:<br><br><br>
+		<img src="Image/45-1.jpeg" 	alt="ma photo" width="550px" height="150px"><br>
+		
+		CSS:<br>
+		<img src="Image/45-2.jpeg" 	alt="ma photo" width="350px" height="550px">
+	</p><br>
+
+<h4> 46) media queries to modify the video size or aspect ratio for different screen resolutions or device orientations, ensuring a responsive video display.</h4>
+	<p>
+		You can use media queries to adjust the video container’s aspect ratio or size based on different screen sizes. Here’s how you might incorporate media queries:<br>
+		<img src="Image/46.jpeg" 	alt="ma photo" width="550px" height="550px">
+	</p><br>
+
+<h4> 47) How do you embed audio in an HTML document?</h4>
+	<p>
+		You can use the <code style="color:blue">&lt;audio&gt;</code> element to embed audio. Here’s a basic example:<br>
+		<img src="Image/47.jpeg" 	alt="ma photo" width="550px" height="250px">
+	</p><br>
+
+<h4> 48) Advanced HTML Interview Questions and Answers</h4>
+	<p>
+		<ul>
+				<li> Custom Data Attributes: Using data-* attributes to store extra information.</li>
+				<li> HTML5 Forms: Using new input types like email, tel, date, etc.</li>
+				<li> Semantic Elements: Understanding the purpose of elements like , <code style="color:blue">&lt;footer&gt;</code>;<code style="color:blue">&lt;article&gt;</code>, etc.</li>
+				<li> Web Components: Creating reusable custom elements using <code style="color:blue">&lt;template&gt;</code>, <code style="color:blue">&lt;slot&gt;</code>, and custom elements APIs.</li>
+		<ul>
+		
+	</p><br>
+
+<h4> 49) What is the purpose of the "span" element in HTML?</h4>
+	<p>
+		The <code style="color:blue">&lt;span&gt;</code> element is an inline container used to group and style text or other inline elements. Unlike block-level elements like <code style="color:blue">&lt;div&gt;</code>, <code style="color:blue">&lt;span&gt;</code> doesn’t break the flow of content. It is often used for applying styles or scripts to a specific part of a text.
+	</p><br>
+
+<h4> 50) What is the purpose of the "required" attribute in a form element?</h4>
+	<p>
+		The required attribute ensures that the form cannot be submitted until the field with this attribute is filled out. It's used for client-side validation to make sure the user does not leave important fields blank.
+	</p><br>
+
+<h4> 51) How do you create a checkbox in HTML?</h4>
+	<p>
+		To create a checkbox in HTML, use the <code style="color:blue">&lt;input&gt;</code> tag with the type attribute set to "checkbox". For example:
+		<img src="Image/51.jpeg" 	alt="ma photo" width="550px" height="150px"><br>
+	</p><br>
+
+<h4> 52) What is the purpose of the "cols" and "rows" attributes in the "textarea" tag?</h4>
+	<p>
+		The cols attribute specifies the visible width of the text area, measured in characters, while the rows attribute specifies the visible height of the text area, measured in lines of text.
+	</p><br>
+
+<h4> 53) What is the purpose of the "scope" attribute in an HTML table?</h4>
+	<p>
+		The scope attribute is used in <code style="color:blue">&lt;th&gt;</code> elements to define which cells a header cell is associated with. It helps with accessibility by indicating whether the header applies to a row (scope="row"), column (scope="col"), or group of rows and columns (scope="colgroup" and scope="rowgroup").
+	</p><br>
+
+<h4> 54) What is the purpose of the "rel" attribute in the "link" tag?</h4>
+	<p>
+		The rel attribute specifies the relationship between the current document and the linked resource. For example, in a <code style="color:blue">&lt;link&gt;</code> tag that includes a stylesheet, you might use rel="stylesheet" to indicate that the linked file is a CSS stylesheet.
+	</p><br>
+
+<h4> 55) How do you create a range input slider in HTML?</h4>
+	<p>
+		To create a range input slider, use the <code style="color:blue">&lt;input&gt;</code> tag with the type attribute set to "range". For example:<br>
+		<img src="Image/55.jpeg" 	alt="ma photo" width="550px" height="50px"><br>
+	</p><br>
+
+<h4> 56) What is the purpose of the "disabled" attribute in an HTML element?</h4>
+	<p>
+		he disabled attribute makes an HTML element unresponsive to user interactions. For form elements, it means that the element will not be submitted with the form, and it will appear grayed out.
+	</p><br>
+
+<h4> 57) What is the purpose of the "maxlength" attribute in an input field?</h4>
+	<p>
+		The maxlength attribute specifies the maximum number of characters that the user can enter into a text input field.
+	</p><br>
+
+<h4> 58) How do you create a numbered list in HTML?</h4>
+	<p>
+		To create a numbered list, use the <code style="color:blue">&lt;ol&gt;</code> tag, and place each item in the list inside <code style="color:blue">&lt;li&gt;</code> tags. For example:
+		<img src="Image/57.jpeg" 	alt="ma photo" width="550px" height="250px"><br>
+	</p><br>
+
+<h4> 59) What is the purpose of the "target" attribute in the "form" tag?</h4>
+	<p>
+		The target attribute specifies where to display the response after submitting the form. Common values include _self (default, display in the same frame), _blank (open in a new tab or window), _parent, and _top.
+	</p><br>
+
+<h4> 60) How do you create a multi-line text input field in HTML?</h4>
+	<p>
+		To create a multi-line text input field, use the <code style="color:blue">&lt;textarea&gt;</code> tag. For example:<br>
+		<img src="Image/60.jpeg" 	alt="ma photo" width="550px" height="250px"><br>
+	</p><br>
+<h4> 61) What is the purpose of the "hidden" attribute in an HTML element?</h4>
+	<p>
+		The "hidden" attribute in an HTML element is a Boolean attribute that indicates whether the element is not yet, or is no longer, relevant. When this attribute is present, the element is not displayed in the browser.
+	</p><br>
+	
+<h4> 62) How do you set the background color of an HTML element?</h4>
+	<p>
+		 You can set the background color of an HTML element using CSS. For example:<br>
+		 <img src="Image/62.jpeg" 	alt="ma photo" width="550px" height="250px"><br>
+	</p><br>
+	
+<h4> 63) How do you add a border to an HTML element?</h4>
+	<p>
+		You can add a border to an HTML element using CSS. For example:<br>
+		<img src="Image/63.jpeg" 	alt="ma photo" width="550px" height="250px"><br>
+	</p><br>
+	
+<h4> 64) How do you center-align text horizontally in an HTML element?</h4>
+	<p>
+		To center-align text horizontally in an HTML element, you can use the text-align CSS property with the value center:
+		<img src="Image/64.jpeg" 	alt="ma photo" width="550px" height="250px"><br>
+	</p><br>
+	
+<h4> 65) How do you set the font color of an HTML element?</h4>
+	<p>
+		You can set the font color of an HTML element using the color CSS property:
+		<img src="Image/65.jpeg" 	alt="ma photo" width="550px" height="250px"><br>
+	</p><br>
+	
+<h4> 66) What is the purpose of the HTML <code style="color: blue;">&lt;meta&gt;</code> tag?</h4>
+	<p>
+		The <code style="color: blue;">&lt;meta&gt;</code> tag provides metadata about the HTML document. Metadata can include information such as the character set, author, description, keywords, and viewport settings for responsive design. This information is typically used by search engines and browsers but is not displayed on the page itself.
+	</p><br>
+	
+<h4> 67) What is the purpose of the HTML <code style="color: blue;">&lt;iframe&gt;</code> tag?</h4>
+	<p>
+		tag is used to embed another HTML page within the current page. It allows you to display external content like web pages, videos, maps, etc., inside a frame within your webpage.
+	</p><br>
+	
+<h4> 68) What is the purpose of the HTML  <code style="color: blue;">&lt;header&gt;</code> tag?</h4>
+	<p>
+		The <code style="color: blue;">&lt;header&gt;</code> tag represents the introductory content of a section or page. It typically contains headings, navigational links, or introductory information for the section it is a part of.
+	</p><br>
+	
+<h4> 69) What is the purpose of the HTML <code style="color: blue;">&lt;aside&gt;</code> tag?</h4>
+	<p>
+		The <code style="color: blue;">&lt;aside&gt;</code> tag defines content that is tangentially related to the main content of the page, such as sidebars, pull quotes, advertisements, or other related information that complements the main content.
+	</p><br>
+	
+<h4> 70) What is the role of the "canvas" element in HTML5?</h4>
+	<p>
+		The <code style="color: blue;">&lt;canvas&gt;</code> element in HTML5 is used for rendering graphics on the fly, such as drawing shapes, graphs, and images, or creating animations. JavaScript is typically used to manipulate the content inside a canvas element.
+	</p><br>
+	
+<h4> 71) How do you create a progress bar with HTML and CSS?</h4>
+	<p>
+		The <code style="color: blue;">&lt;canvas&gt;</code> element in HTML5 is used for rendering graphics on the fly, such as drawing shapes, graphs, and images, or creating animations. JavaScript is typically used to manipulate the content inside a canvas element.
+		<img src="Image/71.jpeg" alt="photo">
+	</p><br>
+	
+<h4>72) What is the role of the "datalist" element in HTML5?</h4>
+	<p>
+		The <datalist> element is used to provide a list of predefined options for an <input> element. It works with the list attribute of an <input> to create a dropdown list of options that the user can select from while still allowing them to type their own input
+	</p><br>
+	
+<h4> 73) How do you center align an HTML element?</h4>
+	<p>
+		You can center-align an HTML element in several ways depending on whether it's an inline, block, or flex item.
+	</p><br>
+	
+<h4> 74) What is the role of the "mark" element in HTML5?</h4>
+	<p>
+		The <mark> element is used to highlight or "mark" text that has special relevance in the context, like highlighting search results or important information.
+	</p><br>
+		
+<h4> 75) How do you add a video background to an HTML element?</h4>
+	<p>
+		You can add a video background using the <video> element with the autoplay, loop, and muted attributes to ensure the video plays automatically without sound.
+			<img src="Image/75.jpeg" alt="photo">
+	</p><br>
+
+<h4> 76) What is the purpose of the "formnovalidate" attribute in an HTML form?</h4>
+	<p>
+		The formnovalidate attribute is used to bypass form validation when submitting a form. It is typically added to a submit button within a form to prevent the form from being validated when that specific button is clicked.
+
+	</p><br>
+
+<h4> 77) How do you embed a Google Map in an HTML document?</h4>
+	<p>
+		To embed a Google Map in an HTML document, you can use the iframe code provided by Google Maps.
+
+Steps:
+
+Go to Google Maps.
+Search for the location you want to embed.
+Click on the "Share" button and then "Embed a map."
+Copy the iframe code and paste it into your HTML.
+<img src="Image/77.jpeg" alt="Photo">
+	</p><br>
+
+<h4> 78) What is the purpose of the "datetime" attribute in the "time" element?</h4>
+	<p>
+		The datetime attribute in the <time> element specifies the machine-readable date and time in a standard format (ISO 8601). It is useful for search engines, screen readers, and other automated systems that need to understand the exact date or time being referenced.
+	</p><br>	
+
+	
+	</body>
+	</head>

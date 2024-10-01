@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Courses and Food</title>
+    <style>
+        *{
+			text-decoration: none;
+		}
+		.navbar{
+			background: crimson; 
+			font-family: calibri; 
+			padding-right: 15px;
+			padding-left: 15px;
+			background-color:black;
+		}
+		.navdiv{
+			display: flex; 
+			align-items: center; 
+			justify-content: space-between;
+			background-color:black;
+		}
+		.logo img{
+			font-size: 35px;
+			width:100px;
+			height:100px;
+			font-weight: 600; 
+			color: white;
+		}
+		li{
+			list-style: none; 
+			display: inline-block;
+		}
+		li a{
+			color: white; 
+			font-size: 18px; 
+			font-weight: bold; 
+			margin-right: 25px;
+		}
+		button{
+			background-color: black;
+			margin-left: 10px; 
+			border-radius: 10px; 
+			padding: 10px; 
+			width: 90px;
+		}
+		button a{
+			color: white; 
+			font-weight:bold; 
+			font-size: 15px;
+		}
+		.img-container {
+    position: relative;
+    text-align: center;
+}
+
+.img-container img {
+    width: 100%; /* Ajuste selon tes besoins */
+    height: auto; /* Maintient les proportions */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white; /* Change la couleur selon le fond */
+    font-size: 30px; /* Ajuste la taille du texte */
+	color:Orange;
+    padding: 10px;
+}
+        body{
+            background-color: lightgray;
+        }
+        ul.courses {
+            list-style-type: square;
+        }
+
+        ol.food {
+            list-style-type: upper-roman;
+        }
+
+        table {
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+            margin-top: 40px;
+        }
+
+        table, th, td {
+            border: 4px solid black;
+        }
+
+        th, td {
+            text-align: center;
+            padding: 10px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: white;
+            background-color: blue;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar"></nav>
+		<div class="navdiv">
+			<div class="logo"><img src="C:\web site\csc\CHARITE 2.jpg"> </div>
+			<ul>
+				<li><a href="Assignment 2 part 3.html">Next</a></li>
+				<li><a href="C:\web site\csc\Assigment 2 part 1.html">previous</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="img-container">
+	<img src="C:\web site\csc\CHARITE 2.jpg" alt="chrite">
+	<div class="text-overlay"></div>
+	
+	</div>
+    <h1>My Favorite Courses and Food</h1>
+    <h2>Favorite Courses</h2>
+    <ul class="courses">
+        <li>C programing</li>
+        <li>C++</li>
+        <li>Html</li>
+        <li>CSS</li>
+       <li>Javascript</li>
+       <li>Data structure</li>
+       <li>Physics</li>
+       <li>Mathematics</li>
+    </ul>
+
+    <h2>Favorite Food</h2>
+    <ol class="food">
+        <li>spaghetti </li>
+        <li>Pasta</li>
+         <li>Rice</li>
+         <li>Fufu</li>
+          <li>Pizza</li>
+          <li>Potato</li>
+         <li>Yam</li>
+         <li>chicken</li>
+    </ol>
+    <h2>Information Table</h2>
+    <table>
+        <tr>
+            <th>Favorite courses</th>
+            <th> Favorite Food </th>
+        </tr>
+        <tr>
+            <td>Javascript</td>
+            <td>Pizza</td>
+        </tr>
+        <tr>
+            <td>C programing</td>
+            <td>spaghetti</td>
+        </tr>
+        <tr>
+            <td>Html</td>
+            <td>Rice</td>
+        </tr>
+        <tr>
+            <td>C++</td>
+            <td>Pasta</td>
+        </tr>
+   <tr>
+            <td>Data structure</td>
+            <td>Fufu</td>
+        </tr>
+       <tr>
+            <td>Physics</td>
+            <td>Potato</td>
+        </tr>
+       <tr>
+            <td>Mathematics</td>
+            <td>Yam</td>
+        </tr>
+       <tr>
+            <td>CSS</td>
+            <td>chicken</td>
+        </tr>
+       
+        
+    </table>
+
+</body>
+</html>
